@@ -1,0 +1,427 @@
+{
+  "name": "OHS",
+  "displayName": "OHS",
+  "description": "OHS",
+  "category": "",
+  "helpUrl": "http://localhost:6080/arcgis/rest/directories/arcgisoutput/PFM/HotSpots_GPServer/PFM_HotSpots/OHS.htm",
+  "serverInfo": {
+    "currentVersion": 10.31,
+    "url": "http://localhost:6080/arcgis/rest/services/PFM/HotSpots/GPServer/",
+    "hasResultMapServer": false,
+    "supportsUpload": false
+  },
+  "useResultMapServer": false,
+  "taskUrl": "http://localhost:6080/arcgis/rest/services/PFM/HotSpots/GPServer/OHS",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "Delito",
+      "dataType": "GPString",
+      "description": "Tipo de delito",
+      "defaultValue": "Hurto",
+      "category": "",
+      "choiceList": [
+        "Atracos joyerias",
+        "Hurto",
+        "Robos",
+        "Robos con violencia",
+        "Robos con violencia en viviendas",
+        "Robos en establecimientos",
+        "Robos fuerza en las cosas viviendas",
+        "Sustraccion vehiculos",
+        "Tirones via publica"
+      ],
+      "label": "Delito",
+      "visible": true,
+      "required": true,
+      "tooltip": "Delito"
+    },
+    {
+      "name": "Año",
+      "dataType": "GPString",
+      "description": "Año de delito",
+      "defaultValue": "2011",
+      "category": "",
+      "choiceList": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013"
+      ],
+      "label": "Año",
+      "visible": true,
+      "required": true,
+      "tooltip": "Año"
+    },
+    {
+      "name": "Distrito",
+      "dataType": "GPString",
+      "description": "Distrito donde están ubicados los incidentes",
+      "defaultValue": "Madrid",
+      "category": "",
+      "choiceList": [
+        "Madrid",
+        "Centro",
+        "Arganzuela",
+        "Retiro",
+        "Salamanca",
+        "Chamartin",
+        "Tetuan",
+        "Chamberi",
+        "Fuencarral - El Pardo",
+        "Moncloa - Aravaca",
+        "Latina",
+        "Carabanchel",
+        "Usera",
+        "Puente de Vallecas",
+        "Moratalaz",
+        "Ciudad Lineal",
+        "Hortaleza",
+        "Villaverde",
+        "Villa de Vallecas",
+        "Vicalvaro",
+        "San Blas - Canillejas",
+        "Barajas"
+      ],
+      "label": "Distrito",
+      "visible": true,
+      "required": true,
+      "tooltip": "Distrito"
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "CapaFinal",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        },
+        "fields": [
+          {
+            "name": "OID",
+            "type": "esriFieldTypeOID",
+            "alias": "OID",
+            "visible": true
+          },
+          {
+            "name": "SOURCE_ID",
+            "type": "esriFieldTypeInteger",
+            "alias": "SOURCE_ID",
+            "visible": true
+          },
+          {
+            "name": "Join_Count",
+            "type": "esriFieldTypeInteger",
+            "alias": "Join_Count",
+            "visible": true
+          },
+          {
+            "name": "GiZScore",
+            "type": "esriFieldTypeDouble",
+            "alias": "GiZScore Fixed 421",
+            "visible": true
+          },
+          {
+            "name": "GiPValue",
+            "type": "esriFieldTypeDouble",
+            "alias": "GiPValue Fixed 421",
+            "visible": true
+          },
+          {
+            "name": "Gi_Bin",
+            "type": "esriFieldTypeInteger",
+            "alias": "Gi_Bin Fixed 421_FDR",
+            "visible": true
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length",
+            "visible": true
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area",
+            "visible": true
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "CapaFinal",
+      "visible": true,
+      "required": false,
+      "featureSetMode": "draw",
+      "tooltip": "CapaFinal",
+      "renderer": {
+        "type": "uniqueValue",
+        "field1": "Gi_Bin",
+        "defaultSymbol": {
+          "color": [
+            155,
+            187,
+            89,
+            128
+          ],
+          "outline": {
+            "color": [
+              115,
+              140,
+              61,
+              255
+            ],
+            "width": 1.5,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          },
+          "type": "esriSFS",
+          "style": "esriSFSSolid"
+        },
+        "uniqueValueInfos": [
+          {
+            "value": "-3",
+            "symbol": {
+              "color": [
+                28,
+                43,
+                202,
+                255
+              ],
+              "outline": {
+                "color": [
+                  54,
+                  93,
+                  141,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Cold Spot 99% Confidence",
+            "description": "Cold Spot 99% Confidence"
+          },
+          {
+            "value": "-2",
+            "symbol": {
+              "color": [
+                47,
+                148,
+                226,
+                255
+              ],
+              "outline": {
+                "color": [
+                  61,
+                  93,
+                  196,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Cold Spot 95% Confidence",
+            "description": "Cold Spot 95% Confidence"
+          },
+          {
+            "value": "-1",
+            "symbol": {
+              "color": [
+                79,
+                129,
+                189,
+                128
+              ],
+              "outline": {
+                "color": [
+                  54,
+                  93,
+                  141,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Cold Spot 90% Confidence",
+            "description": "Cold Spot 90% Confidence"
+          },
+          {
+            "value": "0",
+            "symbol": {
+              "color": [
+                247,
+                244,
+                238,
+                255
+              ],
+              "outline": {
+                "color": [
+                  245,
+                  246,
+                  250,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Not Significant",
+            "description": "Not Significant"
+          },
+          {
+            "value": "1",
+            "symbol": {
+              "color": [
+                228,
+                178,
+                155,
+                255
+              ],
+              "outline": {
+                "color": [
+                  230,
+                  177,
+                  164,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Hot Spot 90% Confidence",
+            "description": "Hot Spot 90% Confidence"
+          },
+          {
+            "value": "2",
+            "symbol": {
+              "color": [
+                226,
+                115,
+                63,
+                255
+              ],
+              "outline": {
+                "color": [
+                  206,
+                  115,
+                  92,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Hot Spot 95% Confidence",
+            "description": "Hot Spot 95% Confidence"
+          },
+          {
+            "value": "3",
+            "symbol": {
+              "color": [
+                241,
+                31,
+                3,
+                255
+              ],
+              "outline": {
+                "color": [
+                  243,
+                  54,
+                  6,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "type": "esriSFS",
+              "style": "esriSFSSolid"
+            },
+            "label": "Hot Spot 99% Confidence",
+            "description": "Hot Spot 99% Confidence"
+          }
+        ]
+      },
+      "popup": {
+        "title": "",
+        "fields": [
+          {
+            "name": "OID",
+            "alias": "OID",
+            "type": "esriFieldTypeOID"
+          },
+          {
+            "name": "SOURCE_ID",
+            "alias": "SOURCE_ID",
+            "type": "esriFieldTypeInteger"
+          },
+          {
+            "name": "Join_Count",
+            "alias": "Join_Count",
+            "type": "esriFieldTypeInteger"
+          },
+          {
+            "name": "GiZScore",
+            "alias": "GiZScore Fixed 421",
+            "type": "esriFieldTypeDouble"
+          },
+          {
+            "name": "GiPValue",
+            "alias": "GiPValue Fixed 421",
+            "type": "esriFieldTypeDouble"
+          },
+          {
+            "name": "Gi_Bin",
+            "alias": "Gi_Bin Fixed 421_FDR",
+            "type": "esriFieldTypeInteger"
+          },
+          {
+            "name": "Shape_Length",
+            "alias": "Shape_Length",
+            "type": "esriFieldTypeDouble"
+          },
+          {
+            "name": "Shape_Area",
+            "alias": "Shape_Area",
+            "type": "esriFieldTypeDouble"
+          }
+        ],
+        "enablePopup": true
+      }
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "CapaFinal"
+  ],
+  "showExportButton": false
+}
