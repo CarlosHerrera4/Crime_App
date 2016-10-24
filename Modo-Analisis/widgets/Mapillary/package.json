@@ -1,0 +1,23 @@
+{
+  "name": "mapillary-web-app-widget",
+  "version": "0.0.0",
+  "description": "A Mapillary widget for use in ArcGIS Online and WebAppBuilder.",
+  "main": "Widget.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/standard/bin/cmd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapillary/Mapillary-WebAppWidget.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mapillary/Mapillary-WebAppWidget/issues"
+  },
+  "homepage": "https://github.com/mapillary/Mapillary-WebAppWidget#readme",
+  "devDependencies": {
+    "standard": "^6.0.8"
+  }
+}

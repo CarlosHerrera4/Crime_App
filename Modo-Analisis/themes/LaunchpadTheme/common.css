@@ -1,0 +1,12 @@
+@import url("panels/LaunchpadPanel/style.css");
+
+/**********About Edit Widget*************/
+.jimu-widget-edit .templatePicker {
+	bottom: 92px;
+}
+
+.jimu-widget-edit-infoWindow .esriAttributeInspector .dijitArrowButton.dijitDownArrowButton.dijitArrowButtonContainer {
+  position: static !important;
+  height: 30px !important;
+}
+/**********End Edit Widget*************/

@@ -1,0 +1,604 @@
+{
+  "marker": {
+    "width": 76,
+    "height": 76,
+    "x": 0,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "warning--domestic-animals--us": {
+    "width": 48,
+    "height": 48,
+    "x": 76,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "warning--height-restriction-ahead--us--feet": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 76,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-10--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 76,
+    "pixelRatio": 2
+  },
+  "warning--hairpin-curve-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 124,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "warning--height-restriction-ahead--us--meters": {
+    "width": 48,
+    "height": 48,
+    "x": 124,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-25--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 124,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-15--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 124,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-20--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 124,
+    "pixelRatio": 2
+  },
+  "warning--horizontal-alignment-right--us": {
+    "width": 48,
+    "height": 48,
+    "x": 172,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-45--us": {
+    "width": 48,
+    "height": 48,
+    "x": 172,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-30--us": {
+    "width": 48,
+    "height": 48,
+    "x": 172,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-35--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 172,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-40--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 172,
+    "pixelRatio": 2
+  },
+  "warning--junction-with-a-side-road-perpendicular-left-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 172,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-70--us": {
+    "width": 48,
+    "height": 48,
+    "x": 144,
+    "y": 172,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-50--us": {
+    "width": 48,
+    "height": 48,
+    "x": 220,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-55--us": {
+    "width": 48,
+    "height": 48,
+    "x": 220,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-60--us": {
+    "width": 48,
+    "height": 48,
+    "x": 220,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-65--us": {
+    "width": 48,
+    "height": 48,
+    "x": 220,
+    "y": 144,
+    "pixelRatio": 2
+  },
+  "warning--loop-pretzel--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "regulatory--no-left-or-u-turn--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-80--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "regulatory--maximum-speed-limit-85--us": {
+    "width": 48,
+    "height": 48,
+    "x": 144,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "regulatory--no-bicycles--us": {
+    "width": 48,
+    "height": 48,
+    "x": 192,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "regulatory--no-entry--us": {
+    "width": 48,
+    "height": 48,
+    "x": 268,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "regulatory--no-heavy-goods-vehicles--us": {
+    "width": 48,
+    "height": 48,
+    "x": 268,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "warning--offset-roads--us": {
+    "width": 48,
+    "height": 48,
+    "x": 268,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "regulatory--stop--us": {
+    "width": 48,
+    "height": 48,
+    "x": 268,
+    "y": 144,
+    "pixelRatio": 2
+  },
+  "regulatory--no-left-turn--us--v1": {
+    "width": 48,
+    "height": 48,
+    "x": 268,
+    "y": 192,
+    "pixelRatio": 2
+  },
+  "regulatory--no-pedestrians--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 268,
+    "pixelRatio": 2
+  },
+  "regulatory--no-right-turn--us--v1": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 268,
+    "pixelRatio": 2
+  },
+  "regulatory--no-straight-through--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 268,
+    "pixelRatio": 2
+  },
+  "regulatory--no-u-turn--us--v1": {
+    "width": 48,
+    "height": 48,
+    "x": 144,
+    "y": 268,
+    "pixelRatio": 2
+  },
+  "regulatory--no-u-turn--us": {
+    "width": 48,
+    "height": 48,
+    "x": 192,
+    "y": 268,
+    "pixelRatio": 2
+  },
+  "warning--road-narrows-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 240,
+    "y": 268,
+    "pixelRatio": 2
+  },
+  "warning--double-curve-first-left-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 316,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "regulatory--yield-us": {
+    "width": 48,
+    "height": 48,
+    "x": 316,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "warning--added-lane-from-entering-roadway--us": {
+    "width": 48,
+    "height": 48,
+    "x": 316,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "warning--added-lane-right--us": {
+    "width": 48,
+    "height": 48,
+    "x": 316,
+    "y": 144,
+    "pixelRatio": 2
+  },
+  "warning--crossroads-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 316,
+    "y": 192,
+    "pixelRatio": 2
+  },
+  "warning--cyclists-crossing--us": {
+    "width": 48,
+    "height": 48,
+    "x": 316,
+    "y": 240,
+    "pixelRatio": 2
+  },
+  "warning--divided-highway-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "mandatory--pass-on-either-side--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "warning--slippery-road-surface--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "warning--flaggers-in-road-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 144,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "warning--falling-rocks-or-debris-right--us": {
+    "width": 48,
+    "height": 48,
+    "x": 192,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "warning--emergency-vehicles--us": {
+    "width": 48,
+    "height": 48,
+    "x": 240,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "warning--double-curve-first-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 288,
+    "y": 316,
+    "pixelRatio": 2
+  },
+  "warning--double-reverse-curve--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "warning--double-turn-first-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "warning--double-turn-first-left-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "warning--traffic-merges-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 144,
+    "pixelRatio": 2
+  },
+  "warning--loop-270-degree--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 192,
+    "pixelRatio": 2
+  },
+  "warning--junction-with-a-side-road-perpendicular-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 240,
+    "pixelRatio": 2
+  },
+  "warning--horizontal-alignment-left--us": {
+    "width": 48,
+    "height": 48,
+    "x": 364,
+    "y": 288,
+    "pixelRatio": 2
+  },
+  "warning--junction-with-a-side-road-acute-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--junction-with-a-side-road-acute-left-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--triple-reverse-curve--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--pedestrian-crossing--us": {
+    "width": 48,
+    "height": 48,
+    "x": 144,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--pass-left-or-right--us": {
+    "width": 48,
+    "height": 48,
+    "x": 192,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--motorcycle-crossing--us": {
+    "width": 48,
+    "height": 48,
+    "x": 240,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--narrow-bridge-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 288,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--turn-curve-left--us": {
+    "width": 48,
+    "height": 48,
+    "x": 336,
+    "y": 364,
+    "pixelRatio": 2
+  },
+  "warning--roundabout-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "warning--road-narrows-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "warning--playground-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "warning--road-narrows-left-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 144,
+    "pixelRatio": 2
+  },
+  "warning--turn-right--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 192,
+    "pixelRatio": 2
+  },
+  "warning--t-roads--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 240,
+    "pixelRatio": 2
+  },
+  "warning--stop-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 288,
+    "pixelRatio": 2
+  },
+  "warning--slippery-bicycles--us": {
+    "width": 48,
+    "height": 48,
+    "x": 412,
+    "y": 336,
+    "pixelRatio": 2
+  },
+  "warning--steep-hill-downwards--us": {
+    "width": 48,
+    "height": 48,
+    "x": 0,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--uncontrolled-railroad-crossing-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 48,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--trucks-rollover--us": {
+    "width": 48,
+    "height": 48,
+    "x": 96,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--tram-crossing--us": {
+    "width": 48,
+    "height": 48,
+    "x": 144,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--traffic-signals-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 192,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--turn-curve-right--us": {
+    "width": 48,
+    "height": 48,
+    "x": 240,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--turn-left--us": {
+    "width": 48,
+    "height": 48,
+    "x": 288,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--two-way-traffic-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 336,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--wild-animals--us": {
+    "width": 48,
+    "height": 48,
+    "x": 384,
+    "y": 412,
+    "pixelRatio": 2
+  },
+  "warning--winding-road-first-left-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 460,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "warning--winding-road-first-right-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 460,
+    "y": 48,
+    "pixelRatio": 2
+  },
+  "warning--workers-in-road-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 460,
+    "y": 96,
+    "pixelRatio": 2
+  },
+  "warning--y-roads--us": {
+    "width": 48,
+    "height": 48,
+    "x": 460,
+    "y": 144,
+    "pixelRatio": 2
+  },
+  "warning--yield-ahead--us": {
+    "width": 48,
+    "height": 48,
+    "x": 460,
+    "y": 192,
+    "pixelRatio": 2
+  }
+}

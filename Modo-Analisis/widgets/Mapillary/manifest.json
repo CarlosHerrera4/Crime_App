@@ -1,0 +1,25 @@
+{
+  "name": "Mapillary",
+  "label": "Mapillary",
+  "2D": true,
+  "3D": false,
+  "platform": "HTML",
+  "version": "0.0.1",
+  "wabVersion": "1.4",
+  "author": "https://github.com/mapillary/Mapillary-WebAppWidget/graphs/contributors",
+  "description": "Viewer using MapillaryJS to visualize Mapillary images",
+  "copyright": "",
+  "license": "MIT",
+  "properties": {
+    "inPanel": true,
+    "hasLocale": true,
+    "hasStyle": true,
+    "hasConfig": true,
+    "hasUIFile": true,
+    "hasSettingPage": true,
+    "hasSettingUIFile": true,
+    "hasSettingLocale": true,
+    "hasSettingStyle": true,
+    "IsController": false
+  }
+}
