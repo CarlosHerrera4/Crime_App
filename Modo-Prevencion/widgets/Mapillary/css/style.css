@@ -1,0 +1,59 @@
+@import url("//unpkg.com/mapillary-js@1.7.1/dist/mapillary-js.min.css");
+
+/* add additional custom styles */
+
+.block {
+    display: block;
+}
+
+.rounded {
+    border-radius: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.p1 {
+    padding: 1rem;
+}
+
+.black {
+    color: black;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+
+.mapillary-js {
+   position: relative;
+   width: 100%;
+   height: auto;
+   padding-bottom: 75%;
+}
+
+.mapillary-js canvas {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.Rect span {
+    display: none;
+}
+
+.hide-viewer-content #mly {
+   display: none;
+}
+
+.Notice {
+   display: none;
+}
+
+.hide-viewer-content .Notice {
+   display: block;
+}

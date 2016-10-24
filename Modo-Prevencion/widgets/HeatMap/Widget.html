@@ -1,0 +1,41 @@
+<div>
+    <div>
+        <div>
+            Tipo de delito: <br><select name="Delito" id="delito">
+              <option value="Atracos_joyerias">Atracos a joyerías</option>
+              <option value="Hurto">Hurto</option>
+              <option value="Robos">Robos</option>
+              <option value="Robos_con_violencia">Robos con violencia</option>
+              <option value="Robos_con_violencia_en_viviendas">Robos con violencia en viviendas</option>
+              <option value="Robos_en_establecimientos">Robos en establecimientos</option>
+              <option value="Robos_fuerza_en_las_cosas_viviendas">Robos fuerza en las cosas viviendas</option>
+              <option value="Sustraccion_vehiculos">Sustracción vehículos</option>
+              <option value="Tirones_via_publica">Tirones en vía pública</option>
+            </select>
+        </div><br>
+        <div>
+            Año: <select name="anio" id="anio" data-dojo-attach-event="onchange:myFunction">
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+            </select>
+        </div>
+    </div><br>
+    <div class="blurInfo">
+        <p>
+          <label for="valueControl">Weight by magnitude</label>
+          <input id="valueControl" type="checkbox" checked>
+        </p><br>
+        <p>Blur Radius : <span id="blurValue">10</span></p>
+        <input id="blurControl" type="range" max=30 min=0 value=10 step=1/>
+
+        <p>Max Value : <span id="maxValue">100</span></p>
+        <input id="maxControl" type="range" max=500 min=0 value=100 step=1/>
+
+        <p>Min Value : <span id="minValue">0</span></p>
+        <input id="minControl" type="range" max=500 min=0 value=0 step=1/>
+    </div><br>    
+</div>

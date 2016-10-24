@@ -1,0 +1,121 @@
+<div class="background-color:rgba(51,51,51,0.9);">
+<!--   <h3>${nls.widgetTitle}</h3>
+  <p>${nls.description}</p> -->
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li class="active"><a href="#que" role="tab" data-toggle="tab">¿QUÉ?</a></li>
+    <li><a href="#donde" role="tab" data-toggle="tab">¿CUÁNDO?</a></li>
+    <li><a href="#cuando" role="tab" data-toggle="tab">¿DÓNDE?</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <br><br>
+    <div class="tab-pane active" id="que">
+      <h5>Elija el tipo de delito</h5>
+      <form>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=8 id="1">Atracos a joyerías</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=1 id="2">Hurtos</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=50 id="3">Robos</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=57 id="4">Robos con violencia</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=15 id="5">Robos con violencia en viviendas</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=43 id="6">Robos en establecimientos</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=36 id="7">Robos con fuerza en las cosas en viviendas</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=29 id="8">Sustracción de vehículos</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="opciones" value=22 id="9">Tirones en vía pública</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="tab-pane" id="donde">
+      <br>
+      <h5>Introduzca año</h5>
+      <div class="radio">
+          <label><input type="radio" name="opciones" value=0 id="2013">2013</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="opciones" value=1 id="2012">2012</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="opciones" value=2 id="2011">2011</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="opciones" value=3 id="2010">2010</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="opciones" value=4 id="2009">2009</label>
+      </div>
+      <div class="radio">
+          <label><input type="radio" name="opciones" value=5 id="2008">2008</label>
+      </div>
+      
+    
+      <br><br>
+      <h5>Fecha inicial (opcional)</h5>
+      <input type="datetime-local" class="form-control" id="fecha_inicial">
+      <br>
+      <h5>Fecha final (opcional)</h5>
+      <input type="datetime-local" class="form-control" id="fecha_final">
+    </div>
+
+    <div class="tab-pane" id="cuando">
+      <br>
+      <h5>  Seleccione distrito (Opcional)</h5>
+      <select id="distrito" data-dojo-attach-event="onchange:muestraDistritos">
+        <option value="-1">Seleccione Distrito</option>
+        <option value="Centro">Centro</option>
+        <option value="Arganzuela">Arganzuela</option>
+        <option value="Retiro">Retiro</option>
+        <option value="Salamanca">Salamanca</option>
+        <option value="Chamartín">Chamartín</option>
+        <option value="Tetuán">Tetuán</option>
+        <option value="Chamberí">Chamberí</option>
+        <option value="Fuencarral - El Pardo">Fuencarral - El Pardo</option>
+        <option value="Moncloa - Aravaca">Moncloa - Aravaca</option>
+        <option value="Latina">Latina</option>
+        <option value="Carabanchel">Carabanchel</option>
+        <option value="Usera">Usera</option>
+        <option value="Puente de Vallecas">Puente de Vallecas</option>
+        <option value="Moratalaz">Moratalaz</option>
+        <option value="Ciudad Lineal">Ciudad Lineal</option>
+        <option value="Hortaleza">Hortaleza</option>
+        <option value="Villaverde">Villaverde</option>
+        <option value="Villa de Vallecas">Villa de Vallecas</option>
+        <option value="Vicálvaro">Vicálvaro</option>
+        <option value="San Blas">San Blas</option>
+        <option value="Barajas">Barajas</option>
+      </select>
+      
+      <br><br>
+
+      <div id="divBarrios">
+        <h5 id="p_Barrios" style="display:none;">  Seleccione barrio (Opcional)</h5>
+        <select id="selectBarrios" style="display:none;"></select>
+      </div>
+
+      <br><br>
+      <button class="btn btn-default btn-lg" type="button" id="botonejecutar" data-dojo-attach-event="onclick:muestraPuntos">
+          Ejecutar
+      </button>
+
+    </div>
+
+  </div>
+  <!-- End tab pane -->
+</div>

@@ -1,0 +1,470 @@
+{
+  "charts": [
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/0",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Tirones en vía pública",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "pie": {
+        "colors": [
+          "#5d9cd3",
+          "#eb7b3a",
+          "#a5a5a5",
+          "#febf29",
+          "#4673c2",
+          "#72ad4c"
+        ],
+        "label": true
+      },
+      "bar": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "line": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/1",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Sustracción de vehículos",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Robos con fuerza en las cosas en viviendas",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/3",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Robos en establecimientos",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/4",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Robos con violencia en viviendas",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/5",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Robos con violencia",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/6",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Robos",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/7",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Hurto",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/Incidentes_totales/FeatureServer/8",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "name": "Atracos a joyerías",
+      "description": "",
+      "mode": "feature",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "highLightColor": "#ff0000",
+      "column": {
+        "colors": [
+          "#5d9cd3"
+        ],
+        "horizontalAxis": true,
+        "verticalAxis": true
+      },
+      "labelField": "NUM_MES",
+      "valueFields": [
+        "DIA_SEMANA"
+      ],
+      "sortOrder": "asc"
+    }
+  ]
+}

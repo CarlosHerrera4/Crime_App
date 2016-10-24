@@ -1,0 +1,2096 @@
+{
+  "hideLayersAfterWidgetClosed": false,
+  "queries": [
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/0",
+      "name": "Tirones en vía pública",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "OR",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "DIA_SEMANA es",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": false,
+      "webMapLayerId": "Incidentes_totales_9375"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/1",
+      "name": "Sustraccion de vehículos",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_8077"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/2",
+      "name": "Robos con fuerza en las cosas en viviendas",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "OR",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": 1,
+              "value2": 7
+            },
+            "interactiveObj": {
+              "prompt": "DIA_SEMANA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "DIA_SEMANA BETWEEN 1 AND 7"
+          }
+        ],
+        "expr": "(FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59') OR (DIA_SEMANA BETWEEN 1 AND 7)"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": {
+            "defaultDistance": 0,
+            "defaultUnit": "METERS"
+          }
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_3459"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/3",
+      "name": "Robos en establecimientos",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_6115"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/4",
+      "name": "Robos con violencia en viviendas",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_7702"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/5",
+      "name": "Robos con violencia",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_712"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/6",
+      "name": "Robos",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_9662"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/7",
+      "name": "Hurto",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_9280"
+    },
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_totales/FeatureServer/8",
+      "name": "Atracos en joyerías",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "FECHA",
+              "label": "FECHA",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Tue Jan 01 2008",
+              "value2": "Wed Dec 31 2008"
+            },
+            "interactiveObj": {
+              "prompt": "FECHA está entre",
+              "hint": "",
+              "cascade": false
+            },
+            "caseSensitive": false,
+            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+          }
+        ],
+        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": {
+          "default": true,
+          "geometryTypes": [
+            "POLYGON"
+          ],
+          "buffer": null
+        },
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{Distrito}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CID",
+            "label": "CID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Distrito",
+            "label": "Distrito",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Barrio",
+            "label": "Barrio",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPO_INCIDENTE",
+            "label": "TIPO_INCIDENTE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_DISTRITO",
+            "label": "COD_DISTRITO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "COD_BARRIO",
+            "label": "COD_BARRIO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHA",
+            "label": "FECHA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "HORA",
+            "label": "HORA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIA_SEMANA",
+            "label": "DIA_SEMANA",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_SEMANA",
+            "label": "NUM_SEMANA",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUM_MES",
+            "label": "NUM_MES",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DELITO",
+            "label": "DELITO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CALLE",
+            "label": "CALLE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NUMERO",
+            "label": "NUMERO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "INCCLASS",
+            "label": "INCCLASS",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SPATIALBAND",
+            "label": "SPATIALBAND",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DISTTOORIG",
+            "label": "DISTTOORIG",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TEMPORALBAND",
+            "label": "TEMPORALBAND",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ORIGIN",
+            "label": "ORIGIN",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ZVALUE",
+            "label": "ZVALUE",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NEAR_FID",
+            "label": "NEAR_FID",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NEAR_DIST",
+            "label": "NEAR_DIST",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "GlobalID",
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Incidentes_totales_7437"
+    }
+  ]
+}

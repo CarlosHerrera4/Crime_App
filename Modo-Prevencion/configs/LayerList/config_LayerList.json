@@ -1,0 +1,175 @@
+{
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "Incidentes_Madrid_8350": {
+      "display": true
+    },
+    "Incidentes_Madrid_1619": {
+      "display": true
+    },
+    "Incidentes_Madrid_7474": {
+      "display": true
+    },
+    "Incidentes_Madrid_3533": {
+      "display": true
+    },
+    "Incidentes_Madrid_7097": {
+      "display": true
+    },
+    "Incidentes_Madrid_946": {
+      "display": true
+    },
+    "Incidentes_Madrid_3194": {
+      "display": true
+    },
+    "Incidentes_Madrid_2646": {
+      "display": true
+    },
+    "Incidentes_Madrid_7739": {
+      "display": true
+    },
+    "Incidentes_Madrid_2491": {
+      "display": true
+    },
+    "Incidentes_Madrid_3794": {
+      "display": true
+    },
+    "Incidentes_Madrid_7199": {
+      "display": true
+    },
+    "Incidentes_Madrid_3869": {
+      "display": true
+    },
+    "Incidentes_Madrid_7095": {
+      "display": true
+    },
+    "Incidentes_Madrid_118": {
+      "display": true
+    },
+    "Incidentes_Madrid_4122": {
+      "display": true
+    },
+    "Incidentes_Madrid_7426": {
+      "display": true
+    },
+    "Incidentes_Madrid_1529": {
+      "display": true
+    },
+    "Incidentes_Madrid_5267": {
+      "display": true
+    },
+    "Incidentes_Madrid_6209": {
+      "display": true
+    },
+    "Incidentes_Madrid_8978": {
+      "display": true
+    },
+    "Incidentes_Madrid_9560": {
+      "display": true
+    },
+    "Incidentes_Madrid_4898": {
+      "display": true
+    },
+    "Incidentes_Madrid_2676": {
+      "display": true
+    },
+    "Incidentes_Madrid_3557": {
+      "display": true
+    },
+    "Incidentes_Madrid_6828": {
+      "display": true
+    },
+    "Incidentes_Madrid_1284": {
+      "display": true
+    },
+    "Incidentes_Madrid_2194": {
+      "display": true
+    },
+    "Incidentes_Madrid_5619": {
+      "display": true
+    },
+    "Incidentes_Madrid_5086": {
+      "display": true
+    },
+    "Incidentes_Madrid_6997": {
+      "display": true
+    },
+    "Incidentes_Madrid_7204": {
+      "display": true
+    },
+    "Incidentes_Madrid_8534": {
+      "display": true
+    },
+    "Incidentes_Madrid_1670": {
+      "display": true
+    },
+    "Incidentes_Madrid_8091": {
+      "display": true
+    },
+    "Incidentes_Madrid_3796": {
+      "display": true
+    },
+    "Incidentes_Madrid_6326": {
+      "display": true
+    },
+    "Incidentes_Madrid_1264": {
+      "display": true
+    },
+    "Incidentes_Madrid_6013": {
+      "display": true
+    },
+    "Incidentes_Madrid_9102": {
+      "display": true
+    },
+    "Incidentes_Madrid_2872": {
+      "display": true
+    },
+    "Incidentes_Madrid_7336": {
+      "display": true
+    },
+    "Incidentes_Madrid_6121": {
+      "display": true
+    },
+    "Incidentes_Madrid_7724": {
+      "display": true
+    },
+    "Incidentes_Madrid_7332": {
+      "display": true
+    },
+    "Incidentes_Madrid_2892": {
+      "display": true
+    },
+    "Incidentes_Madrid_1948": {
+      "display": true
+    },
+    "Incidentes_Madrid_474": {
+      "display": true
+    },
+    "Incidentes_Madrid_5510": {
+      "display": true
+    },
+    "Incidentes_Madrid_4695": {
+      "display": true
+    },
+    "Incidentes_Madrid_4591": {
+      "display": true
+    },
+    "Incidentes_Madrid_6842": {
+      "display": true
+    },
+    "Incidentes_Madrid_5435": {
+      "display": true
+    },
+    "Incidentes_Madrid_9009": {
+      "display": true
+    }
+  }
+}

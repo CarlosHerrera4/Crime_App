@@ -1,0 +1,40 @@
+{
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "Incidentes_totales_9375": {
+      "display": true
+    },
+    "Incidentes_totales_8077": {
+      "display": true
+    },
+    "Incidentes_totales_3459": {
+      "display": true
+    },
+    "Incidentes_totales_6115": {
+      "display": true
+    },
+    "Incidentes_totales_7702": {
+      "display": true
+    },
+    "Incidentes_totales_712": {
+      "display": true
+    },
+    "Incidentes_totales_9662": {
+      "display": true
+    },
+    "Incidentes_totales_9280": {
+      "display": true
+    },
+    "Incidentes_totales_7437": {
+      "display": true
+    }
+  }
+}
