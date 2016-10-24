@@ -53,7 +53,7 @@ define(['dojo/_base/declare',
               infoTemplate: infoTemplate
             };
             // Construimos la FeatureLayer a calcular el HeatMap
-            var heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
+            heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
             
             // Controles del HeatMap
             var blurCtrl = document.getElementById("blurControl"); // Control de desenfoque
@@ -146,8 +146,8 @@ define(['dojo/_base/declare',
             //console.log(this.map.graphicsLayerIds);
             // Buscamos la layer que crea el primer HeatMap y la borramos
             // Creo que si abro otro widget que cree otra capa antes, la layer 1 ya no coincidirá con la del heatmap
-            var gl = this.map.getLayer(this.map.graphicsLayerIds[1]);
-            this.map.removeLayer(gl);
+            //var gl = this.map.getLayer(this.map.graphicsLayerIds[1]);
+            this.map.removeLayer(heatmapFeatureLayer);
             //this.map.removeAllLayers();
             
             
@@ -295,7 +295,7 @@ define(['dojo/_base/declare',
               infoTemplate: infoTemplate
             };
             // Construimos la FeatureLayer a calcular el HeatMap
-            var heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
+            heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
             
             // Controles del HeatMap
             var blurCtrl = document.getElementById("blurControl"); // Control de desenfoque
@@ -375,9 +375,12 @@ define(['dojo/_base/declare',
             
         }
 
-      // onClose: function(){
-      //   console.log('onClose');
-      // },
+      onClose: function(){
+        console.log('onClose');
+        debugger
+        this.map.removeLayer(heatmapFeatureLayer);
+        this.map.graphics.clear();
+      },
 
       // onMinimize: function(){
       //   console.log('onMinimize');
