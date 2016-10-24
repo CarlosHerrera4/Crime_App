@@ -33,7 +33,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
            
            // Aquí metemos la capa de Barrios de Madrid y los campos
            // var southCarolinaCounties = new FeatureLayer("http://localhost:6080/arcgis/rest/services/PFM/DivisionesAdministrativas/MapServer/2", {
-         var southCarolinaCounties = new FeatureLayer("http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/DivisionesAdministrativasMadrid/FeatureServer/1", {
+         southCarolinaCounties = new FeatureLayer("http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/DivisionesAdministrativasMadrid/FeatureServer/1", {
           mode: FeatureLayer.MODE_SNAPSHOT,
           outFields: ["*"]
         });
@@ -54,7 +54,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
         this.map.infoWindow.resize(245,125);
 
         dialog = new TooltipDialog({
-          id: "tooltipDialog",
+          id: "tooltipDialog"+ Math.random(),
           style: "position: absolute; width: 250px; font: normal normal normal 10pt Helvetica;z-index:100"
         });
         dialog.startup();
@@ -72,6 +72,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
         
           this.map.graphics.enableMouseEvents();
           this.map.graphics.on("mouse-out", closeDialog);
+          debugger
 
         
 
@@ -121,17 +122,23 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
         
 
         function closeDialog() {
-          map.graphics.clear();
+          this.map.graphics.clear();
           dijitPopup.close(dialog);
+
+          //this.map.removeLayer(southCarolinaCounties);          
         }
            
            
            
        },
 
-      // onClose: function(){
-      //   console.log('onClose');
-      // },
+
+      onClose: function(){
+        console.log('onClose');
+        this.map.removeLayer(southCarolinaCounties);
+        this.map.graphics.clear();
+        dijitPopup.close(dialog);
+      },
 
       // onMinimize: function(){
       //   console.log('onMinimize');
