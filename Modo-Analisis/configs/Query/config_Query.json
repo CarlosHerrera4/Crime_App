@@ -43,7 +43,7 @@
               "value": null
             },
             "interactiveObj": {
-              "prompt": "DIA_SEMANA es",
+              "prompt": "Día de la semana es:",
               "hint": "",
               "cascade": true
             },
@@ -264,11 +264,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Día de la semana es:",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -482,8 +501,7 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
           },
           {
             "fieldObj": {
@@ -492,23 +510,21 @@
               "shortType": "number",
               "type": "esriFieldTypeSmallInteger"
             },
-            "operator": "numberOperatorIsBetween",
+            "operator": "numberOperatorIs",
             "valueObj": {
-              "isValid": true,
-              "type": "value",
-              "value1": 1,
-              "value2": 7
+              "isValid": false,
+              "type": "unique",
+              "value": null
             },
             "interactiveObj": {
-              "prompt": "DIA_SEMANA está entre",
+              "prompt": "Día de la semana es:",
               "hint": "",
-              "cascade": false
+              "cascade": true
             },
-            "caseSensitive": false,
-            "expr": "DIA_SEMANA BETWEEN 1 AND 7"
+            "caseSensitive": false
           }
         ],
-        "expr": "(FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59') OR (DIA_SEMANA BETWEEN 1 AND 7)"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -725,11 +741,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Día de la semana es:",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -943,11 +978,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Día de la semana es:",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -1161,11 +1215,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Día de la semana es:",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -1379,11 +1452,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Día de la semana es:",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -1597,11 +1689,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "DIA_SEMANA",
+              "label": "DIA_SEMANA",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Día de la semana es:",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
@@ -1815,11 +1926,30 @@
               "hint": "",
               "cascade": false
             },
-            "caseSensitive": false,
-            "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "Distrito",
+              "label": "Distrito",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Distrito es",
+              "hint": "",
+              "cascade": true
+            },
+            "caseSensitive": false
           }
         ],
-        "expr": "FECHA BETWEEN '2008-01-01 00:00:00' AND '2008-12-31 23:59:59'"
+        "expr": ""
       },
       "showSQL": false,
       "spatialFilter": {
