@@ -53,7 +53,7 @@ define(['dojo/_base/declare',
               infoTemplate: infoTemplate
             };
             // Construimos la FeatureLayer a calcular el HeatMap
-            var heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
+            heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
             
             // Controles del HeatMap
             var blurCtrl = document.getElementById("blurControl"); // Control de desenfoque
@@ -295,7 +295,7 @@ define(['dojo/_base/declare',
               infoTemplate: infoTemplate
             };
             // Construimos la FeatureLayer a calcular el HeatMap
-            var heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
+            heatmapFeatureLayer = new FeatureLayer(urlfinal, heatmapFeatureLayerOptions);
             
             // Controles del HeatMap
             var blurCtrl = document.getElementById("blurControl"); // Control de desenfoque
@@ -375,9 +375,10 @@ define(['dojo/_base/declare',
             
         }
 
-      // onClose: function(){
-      //   console.log('onClose');
-      // },
+      onClose: function(){
+        console.log('onClose');
+        this.map.removeLayer(heatmapFeatureLayer);
+      },
 
       // onMinimize: function(){
       //   console.log('onMinimize');
