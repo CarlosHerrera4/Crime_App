@@ -33,7 +33,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
            
            // Aquí metemos la capa de Barrios de Madrid y los campos
            // var southCarolinaCounties = new FeatureLayer("http://localhost:6080/arcgis/rest/services/PFM/DivisionesAdministrativas/MapServer/2", {
-         var southCarolinaCounties = new FeatureLayer("http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/DivisionesAdministrativasMadrid/FeatureServer/1", {
+         southCarolinaCounties = new FeatureLayer("http://services6.arcgis.com/ISJgswKTd7DKhcLN/ArcGIS/rest/services/DivisionesAdministrativasMadrid/FeatureServer/1", {
           mode: FeatureLayer.MODE_SNAPSHOT,
           outFields: ["*"]
         });
@@ -129,9 +129,11 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
            
        },
 
-      // onClose: function(){
-      //   console.log('onClose');
-      // },
+      onClose: function(){
+        console.log('onClose');
+        this.map.removeLayer(southCarolinaCounties);
+        dijitPopup.close(dialog);
+      },
 
       // onMinimize: function(){
       //   console.log('onMinimize');
