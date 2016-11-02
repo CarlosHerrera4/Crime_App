@@ -441,7 +441,7 @@
     }
   },
   "loadingPage": {
-    "backgroundColor": "#508dca",
+    "backgroundColor": "#69737c",
     "backgroundImage": {
       "visible": false
     },
