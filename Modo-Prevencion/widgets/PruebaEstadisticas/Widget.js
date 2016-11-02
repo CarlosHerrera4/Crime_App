@@ -178,9 +178,11 @@ define(['dojo/_base/declare',
        
        }
 
-      // onClose: function(){
-      //   console.log('onClose');
-      // },
+      onClose: function(){
+        console.log('onClose');
+        this.map.on("click", nada);
+        function nada() {};
+      },
 
       // onMinimize: function(){
       //   console.log('onMinimize');
