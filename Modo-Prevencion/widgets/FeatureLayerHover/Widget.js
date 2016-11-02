@@ -54,7 +54,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
         this.map.infoWindow.resize(245,125);
 
         dialog = new TooltipDialog({
-          id: "tooltipDialog",
+          id: "tooltipDialog" + Math.random(),
           style: "position: absolute; width: 250px; font: normal normal normal 10pt Helvetica;z-index:100"
         });
         dialog.startup();
