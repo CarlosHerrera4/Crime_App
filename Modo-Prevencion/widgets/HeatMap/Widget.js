@@ -373,7 +373,7 @@ define(['dojo/_base/declare',
             
             
             
-        }
+        },
 
       onClose: function(){
         console.log('onClose');
