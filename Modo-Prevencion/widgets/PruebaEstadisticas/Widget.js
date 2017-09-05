@@ -176,7 +176,7 @@ define(['dojo/_base/declare',
        miFuncionClear: function(){ 
             this.map.graphics.clear();
        
-       }
+       },
 
       onClose: function(){
         console.log('onClose');
